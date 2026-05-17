@@ -1,0 +1,184 @@
+# Wazuh SIEM Installation on Ubuntu Server 22.04
+
+## Overview
+This repository documents the step-by-step installation and basic configuration of a **Wazuh SIEM environment on Ubuntu Server 22.04**.  
+The goal of this project is to demonstrate how to deploy a basic Security Information and Event Management (SIEM) system for security monitoring, log analysis, and threat detection in a virtualized lab environment.
+
+This project is useful for:
+- Cybersecurity students
+- SOC analyst learners
+- Anyone interested in SIEM deployment and security monitoring
+
+---
+
+# Technologies Used
+
+- Wazuh SIEM
+- Ubuntu Server 22.04
+- VirtualBox
+- Linux command line tools
+
+---
+
+# Lab Environment
+
+The lab environment uses a virtual machine created in VirtualBox.  
+Ubuntu Server 22.04 is installed inside the virtual machine and Wazuh is deployed on top of it.
+
+Architecture:
+
+Host Machine  
+│  
+├── VirtualBox  
+│  
+└── Ubuntu Server 22.04  
+   │  
+   └── Wazuh SIEM Platform
+
+---
+
+# Installation Steps Summary
+
+## 1. Download VirtualBox
+Download VirtualBox from the official website:
+
+https://www.virtualbox.org/wiki/Downloads
+
+Install VirtualBox on your host system.
+
+---
+
+## 2. Download Ubuntu
+Download Ubuntu installation ISO:
+
+https://ubuntu.com/download/desktop
+
+---
+
+## 3. Create Virtual Machine
+After installing VirtualBox:
+
+1. Open VirtualBox
+2. Click **New**
+3. Give the machine a name
+4. Select the Ubuntu ISO image
+5. Allocate RAM and storage
+
+---
+
+## 4. Configure Virtual Machine Settings
+
+Before starting the machine, configure the following options:
+
+Settings → General → Advanced
+
+Enable:
+
+- Shared Clipboard
+- Drag and Drop
+
+This allows copying files between Windows and Ubuntu.
+
+---
+
+## 5. Install Ubuntu Server
+Start the virtual machine and follow the Ubuntu installation wizard.
+
+Basic steps:
+
+- Select language
+- Configure keyboard
+- Create user account
+- Configure disk partition
+- Install system packages
+
+Once installation is complete, reboot the system.
+
+---
+
+## 6. Install Wazuh
+After Ubuntu installation, install the Wazuh platform on the server.
+
+Wazuh provides:
+
+- Security monitoring
+- Log analysis
+- Intrusion detection
+- Threat intelligence integration
+
+Follow the installation commands provided in the full guide.
+
+---
+
+## 7. Configure Network Access
+Ensure the virtual machine has proper network connectivity.
+
+Verify connection using:
+
+ping google.com
+
+Configure network settings if required.
+
+---
+
+## 8. Access Wazuh Dashboard
+Once installation is completed, open a web browser and access the Wazuh dashboard.
+
+The dashboard provides:
+
+- Security alerts
+- System monitoring
+- Log analysis
+- Threat detection
+
+---
+
+## 9. Verify Wazuh Services
+Check whether Wazuh services are running correctly.
+
+Example verification steps include checking service status and ensuring all components are active.
+
+---
+
+# Full Installation Guide
+
+The complete step-by-step installation document is available in this repository.
+
+Note:
+
+GitHub cannot preview large **.docx** files directly in the browser.  
+However, the full guide can be downloaded from the link below.
+
+Download the complete document:
+
+**Wazuh-SIEM-installation-ubuntu22.docx**
+
+---
+
+# Repository Structure
+
+```
+wazuh-siem-installation
+│
+├── README.md
+├── Wazuh-SIEM-installation-ubuntu22.docx
+└── screenshots
+```
+
+---
+
+# Learning Outcomes
+
+After completing this lab you will understand:
+
+- How to create a virtual cybersecurity lab
+- How to install Ubuntu in a virtual environment
+- How to deploy Wazuh SIEM
+- How to access and monitor security events
+
+---
+
+# Author
+
+Cybersecurity Lab Project  
+Wazuh SIEM Deployment on Ubuntu Server 22.04
